@@ -18,6 +18,9 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+
+
+
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-params</artifactId>
@@ -27,10 +30,14 @@
         </dependencies>
     </dependencyManagement>
     <build>
+        <pluginManagement>
         <plugins>
             <plugin>
-                <!-- something should be here-->
+                <groupId>org.apache.rat</groupId>
+                <artifactId>apache-rat-plugin</artifactId>
+                <version>3.0.0</version>
             </plugin>
         </plugins>
+        </pluginManagement>
     </build>
 </project>
